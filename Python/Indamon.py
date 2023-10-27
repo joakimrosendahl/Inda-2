@@ -1,4 +1,5 @@
 class Pet:
+    # Constructor
     def __init__(self, name, hp, attack, defence, fainted):
         self._self = self
         self._name = name
@@ -19,6 +20,12 @@ class Pet:
         print("Attack: ", Pet._attack)
         print("Defence: ", Pet._defence)
         print("Fainted: ", Pet._fainted)
+
+    def attack(self, enemy):
+        damage = self._attack/enemy._defence
+        print("Damage: ", damage)
+        print("Enemy remaining hp: ", (enemy._hp - damage))
+
 
 
 
