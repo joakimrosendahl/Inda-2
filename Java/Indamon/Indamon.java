@@ -42,6 +42,13 @@ public class Indamon {
         this.setDefense(defense);
         this.setFainted(fainted);
     }
+
+    public void printInfo() {
+        System.out.println("Name: " + this.getName());
+        System.out.println("HP: " + this.getHp());
+        System.out.println("Attack value: " + this.getAttack());
+        System.out.println("Defense value: " + this.getDefense());
+        }
 }
 
   
