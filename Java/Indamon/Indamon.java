@@ -49,6 +49,11 @@ public class Indamon {
         System.out.println("Attack value: " + this.getAttack());
         System.out.println("Defense value: " + this.getDefense());
         }
+    
+    public int attack(Indamon defender) {
+        defender.setHp(hp - this.getAttack() / defender.getDefense());
+        return this.getAttack() / defender.getDefense();
+    }
 }
 
   
