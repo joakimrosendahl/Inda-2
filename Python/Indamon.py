@@ -21,10 +21,10 @@ class Pet:
         print("Defence: ", Pet._defence)
         print("Fainted: ", Pet._fainted)
 
-    def attack(self, enemy):
-        damage = self._attack/enemy._defence
-        print("Damage: ", damage)
-        print("Enemy remaining hp: ", (enemy._hp - damage))
+    def attack(self, defender):
+        damage = self._attack/defender._defence
+        print(damage, "damage has been dealt")
+        print(defender._name, "have", (defender._hp - damage), "hp left")
 
 
 
