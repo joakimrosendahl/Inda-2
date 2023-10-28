@@ -1,23 +1,17 @@
 import Indamon.Indamon;
 
 class Main {
-
-
 public static void main(String[] args) {
-    // create a new "Student" object
-    Indamon glassey = new Indamon();
+    // create a new Indamon object
+    Indamon pika = new Indamon("Pika", 10, 5, 5, false);
 
-    // assign the instance variables to meaningful values
-    glassey.name = "Glassey";
-    glassey.hp = 10;
-    glassey.attack = 5;
-    glassey.defense = 5;
+  
 
-    // get the information of the assigned values
-    System.out.println("Name: " + glassey.name);
-    System.out.println("HP: " + glassey.hp);
-    System.out.println("Attack value: " + glassey.attack);
-    System.out.println("Defense value: " + glassey.defense);
+    // pika.get the information of the assigned values
+    System.out.println("Name: " + pika.getName());
+    System.out.println("HP: " + pika.getHp());
+    System.out.println("Attack value: " + pika.getAttack());
+    System.out.println("Defense value: " + pika.getDefense());
   } // end main method
 
 }

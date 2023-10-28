@@ -32,7 +32,15 @@ public class Indamon {
     public boolean getFainted() {
         return fainted;}
     public void setFainted(boolean newFainted) {
-        fainted = newFainted;
+        fainted = newFainted;}
+
+    
+    public Indamon(String name, int hp, int attack, int defense, boolean fainted) {
+        this.setName(name);
+        this.setHp(hp);
+        this.setAttack(attack);
+        this.setDefense(defense);
+        this.setFainted(fainted);
     }
 }
 
