@@ -38,6 +38,15 @@ class Indamon {
         this.defense = defense;
         this.fainted = fainted;
     }
+
+    printInfo() {
+        console.log("INFO")
+        console.log("Indamon: ", this.name);
+        console.log("Hp: ", this.hp);
+        console.log("Attacl: ", this.attack);
+        console.log("Defense: ", this.defense);
+        console.log("Fainted: ", this.fainted);
+    }
 }
 
 export default Indamon;
