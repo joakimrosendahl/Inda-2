@@ -10,6 +10,7 @@ int main() {
 
     Indamon pika;
     Indamon_init(&pika, "Pika", 10, 5, 5, false);
+    printInfo(&pika);
     
     return 0;
 }

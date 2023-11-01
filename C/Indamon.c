@@ -41,7 +41,16 @@ void setFainted(Indamon* instance, bool newFainted) {
 
 void Indamon_init(Indamon* instance, char* name, int hp, int attack, int defense, bool fainted) {
     setName(instance, name);
+    setHp(instance, hp);
     setAttack(instance, attack);
     setDefense(instance, defense);
     setFainted(instance, fainted);
+}
+
+void printInfo(Indamon* instance) {
+    printf("%s\n", getName(instance));
+    printf("%i\n", getHp(instance));
+    printf("%i\n", getAttack(instance));
+    printf("%i\n", getDefense(instance));
+    printf("%s\n", getFainted(instance) ? "true" : "false");
 }
