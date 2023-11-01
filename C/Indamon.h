@@ -26,5 +26,6 @@ void setFainted(Indamon* instance, bool newFainted);
 // Initialization function declaration
 void Indamon_init(Indamon* instance, char* name, int hp, int attack, int defense, bool fainted);
 void printInfo(Indamon* instance);
+void indamonAttack(Indamon* attacker, Indamon* defender);
 
 #endif // INDAMON

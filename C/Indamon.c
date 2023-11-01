@@ -54,3 +54,8 @@ void printInfo(Indamon* instance) {
     printf("%i\n", getDefense(instance));
     printf("%s\n", getFainted(instance) ? "true" : "false");
 }
+
+void indamonAttack(Indamon* attacker, Indamon* defender) {
+    setHp(defender, getHp(defender) - (getAttack(attacker)/getDefense(defender)));
+    printf("%i damage has been dealt\n", getAttack(attacker)/getDefense(defender));
+}
