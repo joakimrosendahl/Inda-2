@@ -25,6 +25,14 @@ class Pet:
         damage = self._attack/defender._defence
         print(damage, "damage has been dealt")
         print(defender._name, "have", (defender._hp - damage), "hp left")
+        defender._hp = defender._hp - damage
+        if defender._hp <= 0:
+            defender._fainted == True
+            print(defender._name, " has fainted.")
+
+
+# check for health <= 0 -> fainted, Check!
+
 
 
 
